@@ -87,9 +87,9 @@ export default function Equalizer({ eqState, onEqChange }: EqualizerProps) {
               onChange={(e) => handleBandChange(freq, Number(e.target.value))}
               className="h-24 w-2"
               style={{
-                writingMode: 'bt-lr',
+                writingMode: 'bt-lr' as any,
                 WebkitAppearance: 'slider-vertical',
-                appearance: 'slider-vertical',
+                appearance: 'slider-vertical' as any,
               }}
               disabled={!eqState.enabled}
             />
